@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Harsh Upadhye</h1>
+
+          <p class="title">Full Stack web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:harshupadhye39@gmail.com" class="contact-link">harshupadhye39@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+918010992257" class="contact-link">+91 8010992257</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">28 March 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Pune , Maharashtra , India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/Harshup28" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/28_harshupadhye" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/harshup_28/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/harsh-upadhye-b0269a213/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Harshu467" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am Full Stack web developer from Pune, India. I enjoy building software products and solving various real time problems.
+          </p>
+
+          <p>
+            I build website with the skill sets I have , I try to create functional and user-friendly web Team Projects.
+            I am also Open Source Contributor, I am GSOC23 contributor. I like to explore new things. I am interested in 
+            facing real time problems and solve with the technology and that is why I like to participate in various Hackathons.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Freelancing</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality Team Projects made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of Team Projects for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Open Source Contributor</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Achivements</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Xen-IoT 2.0 Hackathon</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Developed and Design MERN Stack web application with Team name CRAWLARS. Problem
+                    statement was Startup an Emerging Industry On EdTech domain. 
+                    Organized by VIIT in association with ACM & CSI.
+                  </p>
+                </div>
+              </figure>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>CodeBreak 4.0 Hackathon</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Developed solution on given problem statement given by Ashok LeyLand where developed solution in team
+                    where I design web UI and integrate API and successfully built solution. 
+                    This was National Level Hackathon at MIT campus for 24 hrs.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Cummins Scholar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Selected from 10K students for Cummins Scholarship for 2021-22 year
+                     where went through assessment and interview
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Google Cloud</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Successfully participated in google cloud program and completed all tasks given and earned badges and some goodies. Here is my
+                    google cloud
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Harsh Upadhye</h4>
+
+              <time datetime="2021-06-14">Time Duartion - 2020 to Present</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Coding Platform</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.codechef.com/users/upadhye_28">
+                <img style="width: 10rem; height:100px; margin-top: 3rem; " src="./assets/images/codechef.svg" alt="Codechef">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://leetcode.com/harshup/">
+                <img style="width: 75px; height:80px; margin-top: 3rem; margin-left: 3rem; " src="./assets/images/leetcode.png" alt="leetcode">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.hackerrank.com/harshupadhye2832?hr_r=1">
+                <img style="width: 10rem; height:100px; margin-top: 3rem; " src="./assets/images/hackerrank.svg" alt="HackerRank">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://auth.geeksforgeeks.org/user/harshupadhye39">
+                <img style=" height: 6rem;  margin-top: 3rem; margin-left: 4rem;" src="./assets/images/gfg.svg" alt="GFG">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://codeforces.com/profile/harshup_28">
+                <img style="width: 15rem; height:80px; margin-top: 3rem;margin-left: 4rem; " src="./assets/images/codeforces.png" alt="client logo">
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Vishwakarma Insitute Of Information Technology , Pune.</h4>
+
+              <span>2020 — 2024 (9.09 CGPA) </span>
+
+              <p class="timeline-text">
+                Btech Information Technology
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HPT RYK College of Nashik</h4>
+
+              <span>2018 — 2020 ( 82% ) </span>
+
+              <p class="timeline-text">
+                Higher Secondary Education
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Janta Vidyalaya Ghoti</h4>
+
+              <span>2012 — 2018 ( 94 % )</span>
+
+              <p class="timeline-text">
+                Secondary Education
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GSOC23 Contributor</h4>
+
+              <span>May 2023 — Present</span>
+
+              <p class="timeline-text">
+                This include open source contribution to various projects available on GSOC23.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Frontend Web Developer</h4>
+
+              <span>Jan 2023 — Present</span>
+
+              <p class="timeline-text">
+                Frontend Web Developer Team for Office of International Relations Club of VIIT
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Frontend Web Developer</h4>
+
+              <span>Jan 2023 — Mar 2023</span>
+
+              <p class="timeline-text">
+                Full Stack Developer, Online Dispute Resolution is prototype which was build from scratch.
+                Frontend website application built using Next Js and Tailwind
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AWS Intern</h4>
+
+              <span>Mar 2022 — May 2022</span>
+
+              <p class="timeline-text">
+                AWS Cloud Virtual Internship
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"> CPP | Java | C | JavaScript | Python | TypeScript - Coding Skills & Languages</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ReactJs | NextJs | HTML | CSS | Tailwind | BootStrap | React Native  - Frontend </h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NodeJs | Express | MongoDB | MYSQL | Redux | Git | API Integration - Backend & other</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Linux | Docker | AWS | App development - Cloud & Other</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 78%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>My Projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Team Projects</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>My Projects</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Team Projects</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="my projects">
+              <a href="https://crypto-currency-ten.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img  src="./assets/images/p1.png" alt="CryptoCurrency" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CryptoCurrency</h3>
+
+                <p class="project-category">My Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="my projects">
+              <a href="https://gym-psi.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p2.png" alt="Gym" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gym</h3>
+
+                <p class="project-category">My Project</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="my projects">
+              <a href="https://ecom-rho-wine.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p3.png" alt="Ecom" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ecom</h3>
+
+                <p class="project-category">My Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="my projects">
+              <a href="https://amazon-smart-watch.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p8.png" alt="Amazon Watch" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Amazon Watch</h3>
+
+                <p class="project-category">My Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="my projects">
+              <a href="https://harshu467.github.io/Healthy-Me/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p9.png" alt="Healthy Me" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Healthy Me</h3>
+
+                <p class="project-category">My Projects</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="team projects">
+              <a href="https://viit-huslter-codebreak-ui.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p4.png" alt="Ashok Leyland" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ashok Leyland</h3>
+
+                <p class="project-category">Team Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="team projects">
+              <a href="https://frontend-jkj92cxyl-tiaahackthon.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p5.png" alt="Quora" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Quora</h3>
+
+                <p class="project-category">Team Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="team projects">
+              <a href="https://yeild-smart.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p6.png" alt="Yeild Smart" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Yeild Smart</h3>
+
+                <p class="project-category">Team Projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="team projects">
+              <a href="https://oir-website.vercel.app/">
+
+                <figure style="height: 194px;width: 249px;" class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/p7.png" alt="OIR" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">OIR VIIT</h3>
+
+                <p class="project-category">Team Projects</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+    
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6354481716657!2d73.85674371489018!3d18.520306460762565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9d5e898c4b%3A0x419107337a4c7055!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd" 
+              width="400" height="300" loading="lazy"></iframe>
+
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form onsubmit="sendEmail(event)" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+      
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6354481716657!2d73.85674371489018!3d18.520306460762565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9d5e898c4b%3A0x419107337a4c7055!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+      
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+          <form onsubmit="sendEmail(event)" class="form" data-form>
+      
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+      
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+      
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+      
+          </form>
+        </section>
+      
+        
+      </article>
+      
+    </div><article class="contact" data-page="contact">
+      <header>
+        <h2 class="h2 article-title">Contact</h2>
+      </header>
+    
+      <section class="mapbox" data-mapbox>
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6354481716657!2d73.85674371489018!3d18.520306460762565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9d5e898c4b%3A0x419107337a4c7055!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+            width="400" height="300" loading="lazy"></iframe>
+        </figure>
+      </section>
+    
+      <section class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+        <form onsubmit="sendEmail(event)" class="form" data-form>
+    
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+    
+            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          </div>
+    
+          <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    
+          <button class="form-btn" type="submit" disabled data-form-btn>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+    
+        </form>
+      </section>
+    
+      
+    </article>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+  <!--
+    - ionicon link
+  -->
+<script>
+  (function() {
+    emailjs.init('egJ27kaDiQZ80XgWw'); // Replace YOUR_USER_ID with your actual EmailJS user ID
+  })();
+</script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+        <script>
+          (function() {
+            emailjs.init('egJ27kaDiQZ80XgWw'); // Replace YOUR_USER_ID with your actual EmailJS user ID
+          })();
+      
+          function sendEmail(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+      
+            // Get the form data
+            const fullName = document.querySelector('input[name="fullname"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+      
+            // Create the email template parameters
+            const templateParams = {
+              from_name: fullName,
+              from_email: email,
+              message: message,
+            };
+      
+            // Send the email using EmailJS
+            emailjs.send('service_bsjwe5y', 'template_mfx66w9', templateParams,'egJ27kaDiQZ80XgWw')
+              .then(function(response) {
+                console.log('Email sent successfully:', response);
+                // Clear the form fields if needed
+                document.querySelector('input[name="fullname"]').value = '';
+                document.querySelector('input[name="email"]').value = '';
+                document.querySelector('textarea[name="message"]').value = '';
+              })
+              .catch(function(error) {
+                console.error('Failed to send email:', error);
+              });
+          }
+        </script>
+  
+
+</body>
+
+</html>
