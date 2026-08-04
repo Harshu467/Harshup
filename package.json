@@ -1,0 +1,21 @@
+{
+  "name": "harshup-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website with a backend contact handler",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "nodemailer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
+  }
+}

@@ -999,7 +999,7 @@
 
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
-          <form onsubmit="sendEmail(event)" class="form" data-form>
+          <form class="form" data-form novalidate>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1007,7 +1007,13 @@
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
+            <div class="input-wrapper">
+              <input type="tel" name="phone" class="form-input" placeholder="Phone number" data-form-input>
+            </div>
+
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <p class="form-status" aria-live="polite" data-form-status></p>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
@@ -1033,53 +1039,11 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
   <!--
     - ionicon link
   -->
-  <script>
-    (function () {
-      emailjs.init('egJ27kaDiQZ80XgWw'); // Replace YOUR_USER_ID with your actual EmailJS user ID
-    })();
-  </script>
-
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <script>
-    (function () {
-      emailjs.init('egJ27kaDiQZ80XgWw'); // Replace YOUR_USER_ID with your actual EmailJS user ID
-    })();
-
-    function sendEmail(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
-
-      // Get the form data
-      const fullName = document.querySelector('input[name="fullname"]').value;
-      const email = document.querySelector('input[name="email"]').value;
-      const message = document.querySelector('textarea[name="message"]').value;
-
-      // Create the email template parameters
-      const templateParams = {
-        from_name: fullName,
-        from_email: email,
-        message: message,
-      };
-
-      // Send the email using EmailJS
-      emailjs.send('service_bsjwe5y', 'template_mfx66w9', templateParams, 'egJ27kaDiQZ80XgWw')
-        .then(function (response) {
-          console.log('Email sent successfully:', response);
-          // Clear the form fields if needed
-          document.querySelector('input[name="fullname"]').value = '';
-          document.querySelector('input[name="email"]').value = '';
-          document.querySelector('textarea[name="message"]').value = '';
-        })
-        .catch(function (error) {
-          console.error('Failed to send email:', error);
-        });
-    }
-  </script>
 
 
 </body>

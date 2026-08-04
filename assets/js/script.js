@@ -102,17 +102,85 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector('[data-form]');
 const formInputs = document.querySelectorAll('[data-form-input]');
 const formBtn = document.querySelector('[data-form-btn]');
+const formStatus = document.querySelector('[data-form-status]');
+
+const showFormStatus = function (message, isError = false) {
+  if (!formStatus) return;
+  formStatus.textContent = message;
+  formStatus.classList.toggle('error', isError);
+  formStatus.classList.toggle('success', !isError && Boolean(message));
+};
+
+const validateContactPayload = function (payload) {
+  if (!payload.name || !payload.name.trim()) {
+    return { ok: false, message: 'Please enter your full name.' };
+  }
+
+  if (!payload.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email)) {
+    return { ok: false, message: 'Please provide a valid email address.' };
+  }
+
+  if (!payload.message || !payload.message.trim()) {
+    return { ok: false, message: 'Please enter a message before submitting.' };
+  }
+
+  return { ok: true, message: 'Your message looks good.' };
+};
 
 if (form) {
   for (let i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener('input', function () {
       if (form.checkValidity()) {
         formBtn?.removeAttribute('disabled');
+        showFormStatus('');
       } else {
         formBtn?.setAttribute('disabled', '');
       }
     });
   }
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const payload = {
+      name: (form.querySelector('[name="fullname"]')?.value || '').trim(),
+      email: (form.querySelector('[name="email"]')?.value || '').trim(),
+      phone: (form.querySelector('[name="phone"]')?.value || '').trim(),
+      message: (form.querySelector('[name="message"]')?.value || '').trim()
+    };
+
+    const validation = validateContactPayload(payload);
+    if (!validation.ok) {
+      showFormStatus(validation.message, true);
+      return;
+    }
+
+    showFormStatus('Sending your message...', false);
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+      .then(async function (response) {
+        const result = await response.json().catch(function () {
+          return { ok: false, message: 'Could not parse server response.' };
+        });
+
+        if (!response.ok || !result.ok) {
+          throw new Error(result.message || 'Could not send your message.');
+        }
+
+        form.reset();
+        formBtn?.setAttribute('disabled', '');
+        showFormStatus(result.message, false);
+      })
+      .catch(function (error) {
+        showFormStatus(error.message || 'Something went wrong while sending your message. Please try again or use the direct email link.', true);
+      });
+  });
 }
 
 const navigationLinks = document.querySelectorAll('[data-nav-link]');

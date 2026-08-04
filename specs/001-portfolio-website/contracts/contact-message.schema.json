@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContactMessage",
+  "type": "object",
+  "required": ["name", "email", "message"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Sender's full name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Sender's email address"
+    },
+    "phone": {
+      "type": ["string", "null"],
+      "description": "Optional phone number"
+    },
+    "message": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Message content from the sender"
+    }
+  },
+  "additionalProperties": false
+}
